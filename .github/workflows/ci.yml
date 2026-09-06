@@ -31,7 +31,7 @@ jobs:
 
       - name: Start Selenoid and tests
         run: |
-          docker-compose -f docker-compose.yml up --build --abort-on-container-exit
+          docker compose -f docker-compose.yml up --build --abort-on-container-exit
 
       - name: Upload allure results
         if: always()
